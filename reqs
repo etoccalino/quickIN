@@ -1,0 +1,13 @@
+certifi==2024.2.2
+charset-normalizer==3.3.2
+FreeSimpleGUI==5.0.0
+idna==3.7
+oauthlib==3.2.2
+python-dateutil==2.9.0.post0
+pytz==2024.1
+requests==2.31.0
+requests-oauthlib==2.0.0
+six==1.16.0
+tomlkit==0.12.4
+trello==0.9.7.3
+urllib3==2.2.1
