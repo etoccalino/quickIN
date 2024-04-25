@@ -1,8 +1,0 @@
-- API endpoint to post a card: https://developer.atlassian.com/cloud/trello/rest/api-group-cards/#api-cards-post
-- how to get an API key?
-  - is this docs still valid/current/useful? http://www.trello.org/help.html
-  - the atlassian docs... PITA: https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/
-  - ...I might have to create a Power-Up to use the API :/
-  - here's a python package: https://github.com/sarumont/py-trello
-    - explains how to authorize
-    - abstracts the API into a python client object

@@ -1,0 +1,19 @@
+[authentication]
+app_name = "quickIN"
+
+# For instructions, see:
+# https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/
+key = ""    # To be filled up by the user
+secret = "" # To be filled up by the user (is this required?!)
+
+
+[authorization]
+token = ""  # To be filled up by the app
+expiration = "1hour"
+
+
+[trello]
+board_id = ""  # Extracted from the trello board's URL.
+list_name = "" # Name of the list where notes are dumped
+
+list_id = ""   # To be filled up by the app

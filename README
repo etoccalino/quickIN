@@ -1,9 +1,17 @@
 TODO:
-- prompt the user for the access token, then open the browser at "1/authoriza" URL
+- prompt the user for the access token, then open the browser at "1/authorize" URL
   - use a browser agnostic approach
 - store the token in the config file
 - read/write from the config file in the user's home dir
+  - write the token
+  - write the list ID to make future fetches quicker
+- automatically renew expired tokens
 - wrap the trello functionality with FreeSimpleGUI (prototype in `p2.py`)
+- allow for an optional description in the GUI
+- better error handling of config read/write permissions
+- exec the network calls in the background
+- package the app
+- QOL: provide a "board name" in the configs, to try to fetch the board ID.
 
 
 To access the Trello API you need to create a "PowerUp". This involves accepting terms-of-use and adding some personal information. After that (one-time setup step), you can authorize the application to use the Trello API.
