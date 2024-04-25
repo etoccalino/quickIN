@@ -6,6 +6,14 @@ TODO:
 - QOL: provide a "board name" in the configs, to try to fetch the board ID.
 
 
+
+To build the package:
+
+`pip install build` and then `python -m build`
+
+
+Implementation notes:
+
 To access the Trello API you need to create a "PowerUp". This involves accepting terms-of-use and adding some personal information. After that (one-time setup step), you can authorize the application to use the Trello API.
 
 I'm using the "1/authorize" method, as described in https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/. This is handled by the `trello` python library (https://pypi.org/project/trello/) which is... ok.
