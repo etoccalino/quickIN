@@ -1,0 +1,13 @@
+TODO:
+- prompt the user for the access token, then open the browser at "1/authoriza" URL
+  - use a browser agnostic approach
+- store the token in the config file
+- read/write from the config file in the user's home dir
+- wrap the trello functionality with FreeSimpleGUI (prototype in `p2.py`)
+
+
+To access the Trello API you need to create a "PowerUp". This involves accepting terms-of-use and adding some personal information. After that (one-time setup step), you can authorize the application to use the Trello API.
+
+I'm using the "1/authorize" method, as described in https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/. This is handled by the `trello` python library (https://pypi.org/project/trello/) which is... ok.
+
+I'll be storing the application config, including authorization/authentication, in a TOML file in the user home. This is the simplest form of database I can think of (to store authorization tokens) that can double as a configuration. This shall be handled by the `tomlkit` python library.
