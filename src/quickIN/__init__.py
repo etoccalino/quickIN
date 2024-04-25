@@ -1,5 +1,4 @@
 import logging
-import os, os.path
 import webbrowser
 
 import FreeSimpleGUI as sg

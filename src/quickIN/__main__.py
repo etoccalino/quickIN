@@ -1,5 +1,6 @@
 import argparse
 import logging
+import os.path
 
 from . import Config, Trello, GUI
 
