@@ -24,4 +24,3 @@ trello = Trello(config)
 app = GUI(trello)
 
 app.loop()
-

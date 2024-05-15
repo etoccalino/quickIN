@@ -72,11 +72,11 @@ class Trello:
                 self._refresh_token()
                 self.log.info('Token renewed.')
                 retry_network_call = True
-        else:
-            self.log.error('Got a "requests" error. Either a connection, network, or auth error')
-            self.log.error(http)
-            self.log.info('Review the config file for errors (e.g.: key, token)')
-            raise
+            else:
+                 self.log.error('Got a "requests" error. Either a connection, network, or auth error')
+                 self.log.error(http)
+                 self.log.info('Review the config file for errors (e.g.: key, token)')
+                 raise
 
         if retry_network_call:
             self.log.info('Retrying with new token...')
@@ -121,7 +121,6 @@ class Trello:
         Loads the list ID from the config file. If not present, it'll try to fetch it from
         Trello and update the config.
 
-
         Raises `requests.exceptions.HTTPError` if it fails to recover (once) from it.
         '''
         # If present in the cofig, return it immediately
@@ -141,7 +140,7 @@ class Trello:
         # Finding the appropriate list from the collection
         self.log.debug(f'searching for {list_name=} in lists: {lists}')
         try:
-            list_id = [l['id'] for l in lists if l['name'] == 'IN'][0]
+            list_id = [l['id'] for l in lists if l['name'] == list_name][0]
         except KeyError:
             self.log.error('Unrecognized format of list data from Trello!')
             self.log.warning('This error most likely requires patching the program code.')

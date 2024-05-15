@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quickIN"
-version = "0.8.0"
+version = "0.8.1"
 description = "Capture quick notes and post them as cards in a Trello board"
 requires-python = ">=3.8"
 license = {file = "LICENSE.txt"}
