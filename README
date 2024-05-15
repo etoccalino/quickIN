@@ -1,5 +1,4 @@
 TODO:
-- package the app
 - allow for an optional description in the GUI
 - better error handling of config read/write permissions
 - exec the network calls in the background
